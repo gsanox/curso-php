@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Examples - GET vs POST</title>
+    <style>
+        .form-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario GET</h2>
+        <!-- Formulario que envía datos usando el método GET -->
+        <!-- Los datos serán visibles en la URL -->
+        <form action="formulario.php" method="GET">
+            <div>
+                <label for="name_get">Nombre:</label><br>
+                <input type="text" id="name_get" name="name" required>
+                <!-- $name = $_GET['name']; -->
+            </div>
+            <div>
+                <label for="email_get">Email:</label><br>
+                <input type="email" id="email_get" name="email" required>
+                <!-- $email = $_GET['email'] -->
+            </div>
+            <div>
+                <input type="submit" value="Submit using GET">
+            </div>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <!-- Formulario que envía datos usando el método POST -->
+        <!-- Los datos NO serán visibles en la URL, más seguro -->
+        <h2>Formulario POST</h2>
+        <form action="formulario.php" method="POST">
+            <div>
+                <label for="name_post">Nombre:</label><br>
+                <input type="text" id="name_post" name="name" required>
+            </div>
+            <div>
+                <label for="email_post">Email:</label><br>
+                <input type="email" id="email_post" name="email" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar por POST">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
