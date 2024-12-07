@@ -8,13 +8,13 @@ $persona = array(
 // Acceso al elemento
 echo $persona['nombre']; // Jaime
 
-Class cPersona {
-    public nombre;
-    private apellidos;
-    protected edad;
+class cPersona {
+    public $nombre;
+    private $apellidos;
+    protected $edad;
 
-    // Constructor __contruct
-    public __construct($nombre, $apellidos = "", $edad = 0){
+    // Constructor __construct
+    public function __construct($nombre, $apellidos = "", $edad = 0){
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
         $this->edad = $edad;
