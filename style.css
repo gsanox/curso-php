@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+}
+code {
+    color: gray;
+}
+/* Definimos estilo para una etiqueta en este caso <p> */
+p {
+    color: grey;
+}
+/* Usamos # cuando queremos modifica el aspecto de un elemento por id, debería unicamente existir un id con el mismo nombre */
+#miParrafo {
+    color: red;
+    font-size: 1.5rem;
+}
+/* Usamos el punto, cuando queremos modificar el aspecto de todos aquellos elementos por clase */
+.miClase {
+    color: green;
+    font-size: 2rem;
+}
