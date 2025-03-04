@@ -1,9 +1,11 @@
 <?php
 
+var_dump($_POST);
+
 // Si tenemos el usuario y contraseña
 if (isset($_POST['user']) && isset($_POST['password'])) {
     // logica para verificar que el usuario existe etc.
-    setcookie("USUARIO", true, time() + 60, "/questions");
+    setcookie("USUARIO", true, time() + 60, "/");
     /*
     1. `"usuario"` → Nombre de la cookie.
     2. `"Juan"` → Valor de la cookie.
